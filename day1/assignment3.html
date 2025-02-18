@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body>
+   <form action="" method="post">
+    <table>
+        <tr>
+            <td colspan="2">
+                <h1>Registration Form</h1>
+            </td>
+        </tr>
+        <tr>
+            <td><label for="name">Name:</label></td>
+            <td><input type="text" required></td>
+        </tr>
+        <tr>
+            <td><label for="email">Email:</label></td>
+            <td><input type="email" required></td>
+        </tr>
+        <tr>
+            <td><label for="password">Password:</label></td>
+            <td><input type="password" required></td>
+        </tr>
+        <tr>
+            <td><label>Gender:</label></td>
+            <td>
+                <label><input type="radio" name="gender" value="MALE" required> Male</label>
+                <label><input type="radio" name="gender" value="FEMALE"> Female</label>
+                <label><input type="radio" name="gender" value="OTHER"> Other</label>
+            </td>
+        </tr>
+        <tr>
+            <td>Hobbies:</td>
+            <td>
+                <label><input type="checkbox" name="hobbies[]" value="Reading"> Reading</label><br>
+                <label><input type="checkbox" name="hobbies[]" value="Traveling"> Traveling</label><br>
+                <label><input type="checkbox" name="hobbies[]" value="Cooking"> Cooking</label><br>
+                <label><input type="checkbox" name="hobbies[]" value="Sports"> Sports</label><br>
+            </td>
+        </tr>
+        <tr>
+            <td>City:</td>
+            <td>
+                <select name="city" id="city">
+                    <option value="Delhi">Delhi</option>
+                    <option value="Ghaziabad">Ghaziabad</option>
+                    <option value="Chennai">Chennai</option>
+                    <option value="Mumbai">Mumbai</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td><label for="dob">Date of Birth:</label></td>
+            <td><input type="date" name="dob" id="dob" required></td>
+        </tr>
+        <tr>
+            <td><label for="phone">Phone Number:</label></td>
+            <td><input type="tel" name="phone" required></td>
+        </tr>
+        <tr>
+            <td><label for="address">Address:</label></td>
+            <td><textarea name="address" cols="30" rows="3" required></textarea></td>
+        </tr>
+        <tr>
+            <td colspan="2"><input type="submit" onclick="Other()"></td>
+        </tr>
+    </table>
+   </form>
+   <script>
+    function Other(){
+        document.body.innerHTML="<h1>Thank You</h1>"
+    }
+   </script>
+</body>
+</html>
